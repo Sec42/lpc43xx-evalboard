@@ -26,7 +26,7 @@ int main(void)
 
     CGU_Init();
 
-    scu_pinmux(0x2 ,10 , MD_PUP, FUNC0); 	// P2.11 : GPIO1_10: Xplorer BOARD (LED D2)
+    scu_pinmux(0x2 ,9 , MD_PUP, FUNC0); 	// P2.9 : GPIO1_10: Xplorer BOARD (LED D2)
     GPIO_SetDir(CD_PORT,(1<<CD_BIT), 1);
     GPIO_ClearValue(CD_PORT,(1<<CD_BIT));
 
